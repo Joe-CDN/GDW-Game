@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AI : MonoBehaviour
 {
+    public static AI Instance {get; private set;}
     public GameObject StartPos;
     public GameObject EndPos;
     public GameObject hand;
-
-    public GameObject DNAsample;
+    [SerializeField]    private GameObject bloodPrefab;
     
     bool approach = true;
     int randPotRequest = 0;
@@ -154,6 +154,10 @@ public class AI : MonoBehaviour
 
     void giveDNA()
     {
-        DNAsample.transform.position = hand.transform.position;
+        SpawnFromPool(bloodPrefab);
+    }
+    public void SpawnFromPool(GameObject prefab){
+        var spawn = dnaPool.Instance.GetFromPool(prefab);
+        spawn.transform.position = hand.transform.position;
     }
 }

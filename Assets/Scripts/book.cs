@@ -18,10 +18,10 @@ public class book : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(this.transform.position, GameObject.Find("Body").transform.position) <= 2f && Input.GetKeyDown(KeyCode.E)){
+        if(Vector3.Distance(this.transform.position, GameObject.Find("recipeBook").transform.position) <= 2f && Input.GetKeyDown(KeyCode.E)){
             lookedAt = !lookedAt; 
         }
-        if(Vector3.Distance(this.transform.position, GameObject.Find("Body").transform.position) > 2f){
+        if(Vector3.Distance(this.transform.position, GameObject.Find("recipeBook").transform.position) > 2f){
             lookedAt = false;
         }
         page.gameObject.SetActive(lookedAt);

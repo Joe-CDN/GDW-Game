@@ -27,11 +27,4 @@ namespace ObserverPattern
             PersistanceManager.instance.countDown += 60;
         }
     }
-    //public class LoadWin : PlayerEvents
-    //{
-    //    public override  void LoadWinScreen()
-    //    {
-    //        SceneManager.LoadScene("Win");
-    //    }
-    //}
 }

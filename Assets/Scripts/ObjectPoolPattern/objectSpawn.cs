@@ -22,7 +22,7 @@ public class objectSpawn : MonoBehaviour
     private void SpawnFromPool(GameObject prefab){
         lastTime = Time.time;
 
-        var bomb = BasicPool.Instance.GetFromPool(prefab);
-        bomb.transform.position = this.transform.position;
+        var item = BasicPool.Instance.GetFromPool(prefab);
+        item.transform.position = this.transform.position;
     }
 }

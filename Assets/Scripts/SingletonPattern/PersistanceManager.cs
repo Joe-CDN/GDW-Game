@@ -28,7 +28,6 @@ public class PersistanceManager : MonoBehaviour
     {
         if(instance == null)
         {
-         
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -36,6 +35,5 @@ public class PersistanceManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
     }
 }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime; //*
 using UnityEngine.SceneManagement;
 
 public class EndSceneManager : MonoBehaviour
@@ -23,12 +25,23 @@ public class EndSceneManager : MonoBehaviour
 
     public void toMainMenu()
     {
+        StartCoroutine(Disconnect());
         SceneManager.LoadScene("Start");
         GetComponent<AudioSource> ().Stop();
+        PersistanceManager.instance.score = 0;
     }
     public void toLobby()
     {
+        StartCoroutine(Disconnect());
         SceneManager.LoadScene("Load");
         GetComponent<AudioSource> ().Stop();
+        PersistanceManager.instance.score = 0;
+    }
+
+    IEnumerator Disconnect()
+    {
+        PhotonNetwork.Disconnect();
+        while(PhotonNetwork.IsConnected)
+            yield return null;
     }
 }

@@ -90,7 +90,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom() //*
     {
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("Load");
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer) //*

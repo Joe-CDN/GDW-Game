@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239329181}
   - component: {fileID: 239329184}
+  - component: {fileID: 239329182}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -154,6 +155,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239329182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239329180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f8d31d9d75440a01135f0f3970c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &239329184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,10 +181,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropInCauldron: {fileID: 8300000, guid: b3f7e5c3804767843adc981a6e011782, type: 3}
   titleMusic: {fileID: 8300000, guid: 3d6ecc6f58f526d4a9aebf371a90b97e, type: 3}
+  dayEndMusic: {fileID: 0}
   score: 0
+  timeOfDay: 0
+  countDown: 0
+  npcApproachPercent: 0
   useJoystick: 0
   grabObject: 0
   playing: 0
+  npcApproach: 0
 --- !u!1 &258285418
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +276,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2022631236}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 239329182}
+        m_TargetAssemblyTypeName: ScoreSave, Assembly-CSharp
+        m_MethodName: setHighScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

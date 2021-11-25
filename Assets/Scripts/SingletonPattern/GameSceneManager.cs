@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using System.Runtime.InteropServices;
+using System.IO;
 public class GameSceneManager : MonoBehaviour
 {
     public float dayDelay = 10f;
@@ -18,7 +19,14 @@ public class GameSceneManager : MonoBehaviour
 
     private void Awake()
     {
-        dayTime = 6;
+        if (System.IO.File.Exists(Application.dataPath + "/time.txt"))
+        {
+            string saveString = File.ReadAllText(Application.dataPath + "/time.txt");
+            Debug.Log(saveString);
+
+            dayTime = int.Parse(saveString);
+
+        }
         PersistanceManager.instance.countDown = NPCMaxTime;
         PersistanceManager.instance.playing = true;
     }

@@ -12,7 +12,7 @@ public class ScoreSave : MonoBehaviour
     static extern void setScore(float s);
 
     [DllImport("ScoreSaver")]
-    static extern Vector3 scoreText();
+    static extern void scoreText();
 
     private int highScore;
     // Start is called before the first frame update
@@ -31,9 +31,14 @@ public class ScoreSave : MonoBehaviour
         //Debug.Log(highScore);
     }
 
-    public void setHighScore()
+    public void saveHighScore()
     {
-        Debug.Log(highScore);
+        if(PersistanceManager.instance.score>getScore())
+        {
+            setScore(PersistanceManager.instance.score); //set the score 
+        }
+        scoreText();
+        Debug.Log("Something happened");
     }
 
     // Update is called once per frame

@@ -13,6 +13,7 @@ public class EndSceneManager : MonoBehaviour
         GetComponent<AudioSource> ().clip = PersistanceManager.instance.dayEndMusic;
         GetComponent<AudioSource> ().playOnAwake = true;        
         GetComponent<AudioSource> ().loop = true;
+        
     }
 
     // Update is called once per frame

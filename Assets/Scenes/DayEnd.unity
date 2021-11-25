@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571322, b: 0.30692163, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,73 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &451577841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451577844}
+  - component: {fileID: 451577843}
+  - component: {fileID: 451577842}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &451577842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451577841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f8d31d9d75440a01135f0f3970c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &451577843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451577841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d022bdbbb14d33540a94075e9243aad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropInCauldron: {fileID: 8300000, guid: b3f7e5c3804767843adc981a6e011782, type: 3}
+  titleMusic: {fileID: 8300000, guid: 3d6ecc6f58f526d4a9aebf371a90b97e, type: 3}
+  dayEndMusic: {fileID: 0}
+  score: 0
+  timeOfDay: 0
+  countDown: 0
+  npcApproachPercent: 0
+  useJoystick: 0
+  grabObject: 0
+  playing: 0
+  npcApproach: 0
+--- !u!4 &451577844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451577841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500272866
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +276,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1369912878}
         m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
         m_MethodName: toMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 451577842}
+        m_TargetAssemblyTypeName: ScoreSave, Assembly-CSharp
+        m_MethodName: saveHighScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -342,6 +421,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1369912878}
         m_TargetAssemblyTypeName: EndSceneManager, Assembly-CSharp
         m_MethodName: toLobby
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 451577842}
+        m_TargetAssemblyTypeName: ScoreSave, Assembly-CSharp
+        m_MethodName: saveHighScore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1090,7 +1181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Money Earned: 999gp'
+  m_Text: 'Money Earned: '
 --- !u!222 &1953390664
 CanvasRenderer:
   m_ObjectHideFlags: 0

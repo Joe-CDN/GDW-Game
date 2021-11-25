@@ -10,46 +10,52 @@ public class AI : MonoBehaviour
     public GameObject hand;
     [SerializeField]    private GameObject bloodPrefab;
     
-    bool approach = true;
+    //bool approach = true;
     int randPotRequest = 0;
     float potionTotalRequested = 0f;
-    float fraction = 0;
+    //float fraction = 0;
     public float speed = 0.5f;
     
     // Start is called before the first frame update
     void Start()
     {
         RequestPotion();
+        PersistanceManager.instance.npcApproach = true;
+        PersistanceManager.instance.npcApproachPercent = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(approach == true){
-            if (fraction < 1) {
-                fraction += Time.deltaTime * speed;
+        //PersistanceManager.instance.npcApproach = approach;
+        //PersistanceManager.instance.npcApproachPercent = fraction;
+        if(PersistanceManager.instance.npcApproach == true){
+            if (PersistanceManager.instance.npcApproachPercent < 1) {
+                PersistanceManager.instance.npcApproachPercent += Time.deltaTime * speed;
 
-                Vector3 interpolatedPosition = Vector3.Lerp(StartPos.transform.position, EndPos.transform.position, fraction);
+                Vector3 interpolatedPosition = Vector3.Lerp(StartPos.transform.position, EndPos.transform.position, PersistanceManager.instance.npcApproachPercent);
 
                 this.transform.position = interpolatedPosition;
-                if (fraction >= 1 && potionTotalRequested == 50.61f) {
+                if (PersistanceManager.instance.npcApproachPercent >= 1 && potionTotalRequested == 50.61f) {
                     giveDNA();
                 }
             }
         }
-        if(approach == false){
-            if (fraction < 1) {
-                fraction += Time.deltaTime * speed;
+        if(PersistanceManager.instance.npcApproach == false){
+            if (PersistanceManager.instance.npcApproachPercent < 1) {
+                PersistanceManager.instance.npcApproachPercent += Time.deltaTime * speed;
                 
-                Vector3 interpolatedPosition = Vector3.Lerp(EndPos.transform.position, StartPos.transform.position, fraction);
+                this.transform.rotation = Quaternion.Euler(0f, 90f, 0f);    
+                
+                Vector3 interpolatedPosition = Vector3.Lerp(EndPos.transform.position, StartPos.transform.position, PersistanceManager.instance.npcApproachPercent);
 
                 this.transform.position = interpolatedPosition;
 
-                if (fraction >= 1) {
-                    approach = true;
+                if (PersistanceManager.instance.npcApproachPercent >= 1) {
+                    PersistanceManager.instance.npcApproach = true;
                     RequestPotion();                    
                     this.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
-                    fraction = 0;
+                    PersistanceManager.instance.npcApproachPercent = 0;
                 }
             }
         }
@@ -109,10 +115,8 @@ public class AI : MonoBehaviour
     void ResetNPC(Collision collision)
     {
         Destroy(collision.gameObject);
-        fraction = 0;
-        approach = false;
-        this.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
-        
+        PersistanceManager.instance.npcApproachPercent = 0;
+        PersistanceManager.instance.npcApproach = false;            
     }
     void RequestPotion()
     {

@@ -6,28 +6,33 @@ namespace ObserverPattern
 {
     public class GameController : MonoBehaviour
     {
-        public GameObject player;
-        //The boxes that will jump
-        public GameObject endObj;
-
         //Will send notifications that something has happened to whoever is interested
+        public int timeDayEnds;
         Subject subject = new Subject();
+
+        Subject subject2 = new Subject();
 
         // Start is called before the first frame update
         void Start()
         {
-            //End end1 = new End(endObj, new LoadWin());
+            Clock dayClock = new Clock(new DayEnded());
+            subject.AddObserver(dayClock);
 
-            //subject.AddObserver(end1);
+            NPC customer = new NPC(new NPCLeave());
+            subject2.AddObserver(customer);
         }
 
         // Update is called once per frame
         void Update()
         {
-            //if(Move.finished == true)
-            //{
-            //    subject.Notify();
-            //}
+            if(PersistanceManager.instance.timeOfDay == timeDayEnds)
+            {
+                subject.Notify();
+            }
+            if(PersistanceManager.instance.countDown <= 0)
+            {
+                subject2.Notify();
+            }
         }
     }
 }

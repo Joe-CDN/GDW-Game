@@ -9,23 +9,32 @@ namespace ObserverPattern
         public abstract void OnNotify();
     }
 
-    //public class End : Observer
-    //{
-    //    //The observer gameobject which will do something
-    //    GameObject Obj;
-    //    //What will happen when this observer gets an event
-    //    PlayerEvents playerEvent;
-//
-    //    public End(GameObject Obj, PlayerEvents playerEvent)
-    //    {
-    //        this.Obj = Obj;
-    //        this.playerEvent = playerEvent;
-    //    }
-//
-    //    //What the observer will do if the event fits it (will always fit but you will probably change that on your own)
-    //    public override void OnNotify()
-    //    {
-    //        playerEvent.LoadWinScreen();
-    //    }
-    //}
+    public class Clock : Observer
+    {
+        //What will happen when this observer gets an event
+        DayEnded dayOver;
+
+        public Clock(DayEnded dayEvent)
+        {
+            dayOver = dayEvent;
+        }
+        public override void OnNotify()
+        {
+            dayOver.eventTrigger();
+        }
+    }
+
+    public class NPC : Observer
+    {
+        NPCLeave npcLeaves;
+
+        public NPC(NPCLeave npsGo)
+        {
+            npcLeaves = npsGo;
+        }
+        public override void OnNotify()
+        {
+            npcLeaves.eventTrigger();
+        }
+    }
 }

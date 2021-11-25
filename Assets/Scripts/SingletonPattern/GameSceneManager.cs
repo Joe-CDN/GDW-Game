@@ -9,19 +9,25 @@ public class GameSceneManager : MonoBehaviour
     public float dayDelay = 10f;
     public float lastDayTime;
     private int dayTime;
+    public float NPCMaxTime = 60;
 
     public Text scoreLabel;
     public Text clock;
 
+    public Text npcTimer;
+
     private void Awake()
     {
         dayTime = 6;
+        PersistanceManager.instance.countDown = NPCMaxTime;
         PersistanceManager.instance.playing = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        PersistanceManager.instance.timeOfDay = dayTime;
+
         if(Time.time - lastDayTime > dayDelay && PersistanceManager.instance.playing == true){
             dayTime++;
             lastDayTime = Time.time;
@@ -41,9 +47,33 @@ public class GameSceneManager : MonoBehaviour
 
         scoreLabel.text = "Money: " + PersistanceManager.instance.score + "gp";
         
-        if(dayTime == 21)
-        {
-            SceneManager.LoadScene("DayEnd");
+        if(PersistanceManager.instance.npcApproach && PersistanceManager.instance.npcApproachPercent >= 1)
+        {            
+            DisplayTime(PersistanceManager.instance.countDown);
+            if(PersistanceManager.instance.countDown > 0)
+            {
+                PersistanceManager.instance.countDown -= Time.deltaTime;
+            }
+            else
+            {
+                PersistanceManager.instance.countDown = 0;
+            }
         }
+        else
+        {
+            npcTimer.text = " ";
+            PersistanceManager.instance.countDown = NPCMaxTime;
+        }
+    }
+
+    void DisplayTime(float timeToDisplay)
+    {
+        if(timeToDisplay < 0)
+            timeToDisplay = 0;
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        npcTimer.text = "Patience (" + minutes + ":" + seconds + ") ";
     }
 }

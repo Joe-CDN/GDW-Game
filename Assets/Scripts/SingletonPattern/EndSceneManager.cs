@@ -10,7 +10,9 @@ public class EndSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<AudioSource> ().clip = PersistanceManager.instance.dayEndMusic;
+        GetComponent<AudioSource> ().playOnAwake = true;        
+        GetComponent<AudioSource> ().loop = true;
     }
 
     // Update is called once per frame
@@ -22,9 +24,11 @@ public class EndSceneManager : MonoBehaviour
     public void toMainMenu()
     {
         SceneManager.LoadScene("Start");
+        GetComponent<AudioSource> ().Stop();
     }
     public void toLobby()
     {
         SceneManager.LoadScene("Load");
+        GetComponent<AudioSource> ().Stop();
     }
 }

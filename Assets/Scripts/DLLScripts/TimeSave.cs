@@ -19,15 +19,6 @@ public class TimeSave : MonoBehaviour
     private int time;
     private void Start()
     {
-        if (System.IO.File.Exists(Application.dataPath + "/time.txt"))
-        {
-            string saveString = File.ReadAllText(Application.dataPath + "/time.txt");
-            Debug.Log(saveString);
-
-            time = int.Parse(saveString);
-
-        }
-        PersistanceManager.instance.timeOfDay = time;
     }
     void Update()
     {
@@ -36,8 +27,8 @@ public class TimeSave : MonoBehaviour
 
     public void TimeSaver()
     {
-        //setTime(PersistanceManager.instance.timeOfDay);
-        //saveTime();
+        setTime(PersistanceManager.instance.timeOfDay);
+        saveTime();
     }
 
 }

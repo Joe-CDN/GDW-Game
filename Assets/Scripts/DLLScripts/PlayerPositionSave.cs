@@ -18,11 +18,11 @@ public class PlayerPositionSave : MonoBehaviour
 
     Vector3 position;
     // Update is called once per frame
-    void Update()
+
+    private void OnApplicationQuit()
     {
         PositionSave();
     }
-
     public void PositionSave()
     {
         Vector3 pos = transform.position;

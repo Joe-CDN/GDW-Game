@@ -41,9 +41,5 @@ public class ScoreSave : MonoBehaviour
         Debug.Log("Something happened");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -20,11 +20,10 @@ public class TimeSave : MonoBehaviour
     private void Start()
     {
     }
-    void Update()
+    private void OnApplicationQuit()
     {
         TimeSaver();
     }
-
     public void TimeSaver()
     {
         setTime(PersistanceManager.instance.timeOfDay);

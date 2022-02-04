@@ -8,6 +8,8 @@ public class AI : MonoBehaviour
     public GameObject StartPos;
     public GameObject EndPos;
     public GameObject hand;
+    public GameObject bubble;
+
     [SerializeField]    private GameObject bloodPrefab;
     
     //bool approach = true;
@@ -124,35 +126,35 @@ public class AI : MonoBehaviour
 
         if(randPotRequest == 0){
             potionTotalRequested = 27.77f; //purify potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(0.6509434f, 0.6349769f, 0.6349769f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(0.6509434f, 0.6349769f, 0.6349769f);
         }
         if(randPotRequest == 1){
             potionTotalRequested = 23.26f; //gold potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0.8382407f, 0f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0.8382407f, 0f);
         }
         if(randPotRequest == 2){
             potionTotalRequested = 29.18f; //sad potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(0.1437f, 0.01331432f, 0.4150943f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(0.1437f, 0.01331432f, 0.4150943f);
         }
         if(randPotRequest == 3){
             potionTotalRequested = 50.61f; // love potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0f, 0.9095554f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0f, 0.9095554f);
         }
         if(randPotRequest == 4){
             potionTotalRequested = 30.21f; //cat fairy potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 1f, 0.7181935f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 1f, 0.7181935f);
         }
         if(randPotRequest == 5){
             potionTotalRequested = 26.19f; //time potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 0.4150943f, 0.05119479f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 0.4150943f, 0.05119479f);
         }
         if(randPotRequest == 6){
             potionTotalRequested = 14.88f; //truth potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 0.5359084f, 1f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(0f, 0.5359084f, 1f);
         }
         if(randPotRequest == 7){
             potionTotalRequested = 23.42f; //happy potion
-            this.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0.4665077f, 0f);
+            bubble.GetComponentInChildren<MeshRenderer>().material.color = new Color(1f, 0.4665077f, 0f);
         }
     }
 

@@ -3,7 +3,15 @@ guid: d2bba5fcac62c2641bf9458d286d23a3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - purePotPrefab: {instanceID: 0}
+  - goldPotPrefab: {instanceID: 0}
+  - sadPotPrefab: {instanceID: 0}
+  - lovePotPrefab: {instanceID: 0}
+  - catFaePotPrefab: {fileID: 3047135501518165676, guid: c5e54fe417837874d94f89d19f24fc8a, type: 3}
+  - happyPotPrefab: {instanceID: 0}
+  - timePotPrefab: {instanceID: 0}
+  - truthPotPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

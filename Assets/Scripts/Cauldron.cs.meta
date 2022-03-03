@@ -3,7 +3,20 @@ guid: b5912a88e025aad4c99508bc1ddcf18f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - brushPrefab: {fileID: 3344240416474585224, guid: 2bdf9fcd824ca9e49818e5292406da17, type: 3}
+  - waterPrefab: {fileID: 8842461113762033396, guid: 8efa7768b70fd9744b809e91ed483cfa, type: 3}
+  - sugarPrefab: {fileID: 541723532904611765, guid: bb31c4a1ad588e84ab9c35eb5476ad75, type: 3}
+  - spicePrefab: {fileID: 38773805708771529, guid: 162dceefb3d2c9749bd58182e5cb3491, type: 3}
+  - goldPrefab: {fileID: 2209132026353414142, guid: 1a1e44d974c597a409f1c6f4d7ed1754, type: 3}
+  - fishPrefab: {fileID: 8925117723906102821, guid: 3f1090c50e7ebc349827b36d754f4c77, type: 3}
+  - catnipPrefab: {fileID: 2517794012248527396, guid: a125bb1a29f69af49accc7dda45fdef1, type: 3}
+  - fluffPrefab: {fileID: 364816729618593935, guid: 6da165fe479f92346bf0e1ed7b200349, type: 3}
+  - clockPrefab: {fileID: 5502329390775868226, guid: 8894f4b7ed171a24cbb8994719d96859, type: 3}
+  - DNAPrefab: {fileID: 4135499153281811709, guid: 6a2b92e26c8d1074b89646ce2cb730e2, type: 3}
+  - rosePrefab: {fileID: 348013223386952233, guid: ea11dac57c8b93747959a5948f5f953d, type: 3}
+  - morphPrefab: {fileID: 6921104403889380904, guid: 89779b43b264e6949aae37c83b019e4d, type: 3}
+  - emotePrefab: {fileID: 7670174111489888786, guid: bfae51c743be870489a48d5e56eac960, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

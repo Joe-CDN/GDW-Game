@@ -16,6 +16,8 @@ public class PersistanceManager : MonoBehaviour
 
     public int timeOfDay;
 
+    public int roses;
+
     public float countDown;
     public float npcApproachPercent;
 

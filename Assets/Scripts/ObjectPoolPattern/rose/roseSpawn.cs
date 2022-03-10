@@ -14,7 +14,20 @@ public class roseSpawn : MonoBehaviour
     }
     void Start()
     {
-        SpawnFromPool(Prefab);
+        //SpawnFromPool(Prefab);
+        PersistanceManager.instance.roses = 0;
+    }
+    private void Update()
+    {
+        if (Vector3.Distance(this.transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) <= 2f && Input.GetKeyDown(KeyCode.E))
+        {
+            if(PersistanceManager.instance.roses < 1)
+            {
+                SpawnFromPool(Prefab);
+                PersistanceManager.instance.roses += 1;
+                Debug.Log(PersistanceManager.instance.roses);
+            }            
+        }
     }
 
     public void SpawnFromPool(GameObject prefab){

@@ -103,7 +103,8 @@ public class Cauldron : MonoBehaviour
             potionTotal += 10.82f;
             Debug.Log(potionTotal);
             GetComponent<AudioSource> ().Play ();
-            roseSpawn.Instance.SpawnFromPool(rosePrefab);
+            //roseSpawn.Instance.SpawnFromPool(rosePrefab);
+            PersistanceManager.instance.roses = 0;
         }
         if (collision.collider.tag.Equals("morphSpell"))
         {

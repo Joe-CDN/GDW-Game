@@ -76,4 +76,9 @@ public class GameSceneManager : MonoBehaviour
 
         npcTimer.text = "Patience (" + minutes + ":" + seconds + ") ";
     }
+
+    public static void EndGame()
+    {
+        SceneManager.LoadScene("DayEnd");
+    }
 }

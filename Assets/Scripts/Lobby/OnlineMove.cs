@@ -17,6 +17,8 @@ public class OnlineMove : MonoBehaviour
     public static Button pickUp;
     public PhotonView view;
     public RawImage page;
+    public Text bookPrompt;
+    public Text bushPrompt;
     
     //public bool is3rdPerson = true;
     public static bool isGrabbing;
@@ -79,6 +81,15 @@ public class OnlineMove : MonoBehaviour
             }
 
             lookForBook();
+
+            if (Vector3.Distance(this.transform.position, GameObject.Find("roseBush").transform.position) <= 2f)
+            {
+                bushPrompt.gameObject.SetActive(true);
+            }
+            else
+            {
+                bushPrompt.gameObject.SetActive(false);
+            }
         }
     }
     public void playerPickUp()
@@ -88,6 +99,14 @@ public class OnlineMove : MonoBehaviour
     }
     public void lookForBook()
     {
+        if(Vector3.Distance(this.transform.position, GameObject.Find("recipeBook").transform.position) <= 2f && lookedAt == false)
+        {
+            bookPrompt.gameObject.SetActive(true);
+        }
+        else
+        {
+            bookPrompt.gameObject.SetActive(false);
+        }
         if(PersistanceManager.instance.useJoystick == true){
             if(Vector3.Distance(this.transform.position, GameObject.Find("recipeBook").transform.position) <= 2f){
                 lookedAt = true; 
@@ -125,6 +144,14 @@ public class OnlineMove : MonoBehaviour
         {
             if (RI.name == "RecipeBook")
                 page = RI;
+        }
+        Text[] Txt = cameraParent.GetComponentsInChildren<Text>();
+        foreach (Text txt in Txt)
+        {
+            if (txt.name == "BookPrompt")
+                bookPrompt = txt;
+            if (txt.name == "BushPrompt")
+                bushPrompt = txt;
         }
         CinemachineVirtualCamera brain = cameraParent.GetComponentInChildren<CinemachineVirtualCamera>();
         brain.LookAt = this.transform;

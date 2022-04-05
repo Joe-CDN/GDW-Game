@@ -15,7 +15,7 @@ C:/Users/joeyd/Desktop/MyStuff/School/Repos/Release/GDW-Game
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50813
+64064
 Successfully changed project path to: C:/Users/joeyd/Desktop/MyStuff/School/Repos/Release/GDW-Game
 C:/Users/joeyd/Desktop/MyStuff/School/Repos/Release/GDW-Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/joeyd/Desktop/MyStuff/School/Repos/Release/GDW-Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 77.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 87.16 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.5f1 (4ec9a5e799f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,78 +63,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009235 seconds.
+Registered in 0.009922 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 64.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 71.16 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.577 seconds
+- Completed reload, in  0.620 seconds
 Domain Reload Profiling:
-	ReloadAssembly (578ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (621ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (422ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (466ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (93ms)
+			SetupTypeCache (97ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (253ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (288ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (65ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (130ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014780 seconds.
+Registered in 0.011820 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\joeyd\Desktop\MyStuff\School\Repos\Release\GDW-Game\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\joeyd\Desktop\MyStuff\School\Repos\Release\GDW-Game\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.050 seconds
+- Completed reload, in  1.153 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1051ms)
-		BeginReloadAssembly (173ms)
+	ReloadAssembly (1153ms)
+		BeginReloadAssembly (210ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (782ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (840ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
+			SetupTypeCache (218ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (348ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (384ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (229ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (257ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -142,13 +142,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3538 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (128.9 KB). Loaded Objects now: 3990.
-Memory consumption went from 127.6 MB to 127.5 MB.
-Total: 3.043300 ms (FindLiveObjects: 0.251100 ms CreateObjectMapping: 0.190000 ms MarkObjects: 2.532900 ms  DeleteObjects: 0.068400 ms)
+Unloading 44 unused Assets / (129.2 KB). Loaded Objects now: 3990.
+Memory consumption went from 127.9 MB to 127.7 MB.
+Total: 3.119700 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.158400 ms MarkObjects: 2.640700 ms  DeleteObjects: 0.070200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,77 +163,166 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1019746.853988 seconds.
-  path: Assets/Objects/Materials/bowl.mat
-  artifactKey: Guid(6713566f848c50b4eafb3f8ac216dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/bowl.mat using Guid(6713566f848c50b4eafb3f8ac216dfc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ee24f989d43fdb1a2eb762f12e6b1d') in 0.135600 seconds 
+  Time since last request: 1632857.387324 seconds.
+  path: Assets/Resources/Player.prefab
+  artifactKey: Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Player.prefab using Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '4a6fd7a5b6046f0716fed8c28d0859c3') in 0.122160 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Objects/Materials/gold.mat
-  artifactKey: Guid(300a279e21afb464499b2532fe81ea12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/gold.mat using Guid(300a279e21afb464499b2532fe81ea12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d497e074ca3351f374e6e84d12f5e8') in 0.021421 seconds 
+  Time since last request: 1.084545 seconds.
+  path: Assets/Resources/Player.prefab
+  artifactKey: Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Player.prefab using Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '88011d5ada58375f88f569e60b585182') in 0.047922 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Objects/Materials/ingrediants.mat
-  artifactKey: Guid(8632b61dea1b4a04ea5cb16cdf57446d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/ingrediants.mat using Guid(8632b61dea1b4a04ea5cb16cdf57446d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e508a624d446dae048c952b982099037') in 0.020806 seconds 
+  Time since last request: 1.150685 seconds.
+  path: Assets/Resources/Player.prefab
+  artifactKey: Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Player.prefab using Guid(3478cc9093f59ef47b685167fdea8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (MainCharacter) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules\Animation\Director\AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '12dc6864f70f464a1f4fde3335c54679') in 0.018400 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Objects/Materials/table2.mat
-  artifactKey: Guid(5eec8cd62af566249b38628bd803419b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/table2.mat using Guid(5eec8cd62af566249b38628bd803419b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485fe9d79e545617c671976aad6579c3') in 0.275329 seconds 
+  Time since last request: 928.876139 seconds.
+  path: Assets/Objects/Animations/grab-anim.fbx
+  artifactKey: Guid(acd1d86920a83b440af276bdedf6051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/grab-anim.fbx using Guid(acd1d86920a83b440af276bdedf6051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2665bd705e0fd8c8646aaabb3ba95b3b') in 0.217495 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Objects/Materials/tableBracket.mat
-  artifactKey: Guid(7f1c62a85acd813458623e548612fc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/tableBracket.mat using Guid(7f1c62a85acd813458623e548612fc47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcee8360b972222097d0951494b8fb7e') in 0.023382 seconds 
+  Time since last request: 5.615359 seconds.
+  path: Assets/Objects/Animations/idle-anim.fbx
+  artifactKey: Guid(65788a695df10b049a3083e2ffb86552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/idle-anim.fbx using Guid(65788a695df10b049a3083e2ffb86552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4abb25f98ae26a5b5aeb8697283fd887') in 0.094726 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Objects/Materials/MophSpell.mat
-  artifactKey: Guid(3f5c94ce337cc5e41b60c21f0338100a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/MophSpell.mat using Guid(3f5c94ce337cc5e41b60c21f0338100a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff3505d05ceed4906acc25c5bb2001d') in 0.013143 seconds 
+  Time since last request: 15.211241 seconds.
+  path: Assets/Objects/Animations/walk-anim.fbx
+  artifactKey: Guid(a5d6a531b79a061408dd64538b576e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/walk-anim.fbx using Guid(a5d6a531b79a061408dd64538b576e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f918df5868f9978bb77224745aeb126') in 0.114210 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Objects/Materials/Ground.mat
-  artifactKey: Guid(4ade4d8cbfbbfea489eb776cb3db1c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/Ground.mat using Guid(4ade4d8cbfbbfea489eb776cb3db1c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3503e74ecc32856d63188b026f8e00') in 0.013690 seconds 
+  Time since last request: 432.494988 seconds.
+  path: Assets/Objects/Animations/idle.blend
+  artifactKey: Guid(da1f21d7a681be1498409d7a9f1adf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/idle.blend using Guid(da1f21d7a681be1498409d7a9f1adf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba82c8b662a8a6655ca1e38698b300a3') in 0.004767 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Objects/Materials/Water.mat
-  artifactKey: Guid(3dbc2af672dd8f14a8736c73a249912c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/Water.mat using Guid(3dbc2af672dd8f14a8736c73a249912c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6e50412399d5cdc320eece8d2fd97b') in 0.011681 seconds 
+  Time since last request: 1782.162551 seconds.
+  path: Assets/Objects/Animations/idle.blend
+  artifactKey: Guid(da1f21d7a681be1498409d7a9f1adf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/idle.blend using Guid(da1f21d7a681be1498409d7a9f1adf55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb0c4bc9711dd88b5981af04b58558f') in 0.002944 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Objects/Materials/Bucket.mat
-  artifactKey: Guid(bbc371a13788e0542a090c29f65269b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/Bucket.mat using Guid(bbc371a13788e0542a090c29f65269b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b6b3bb97c0d4547ecdf65e0cf4eaa5') in 0.022731 seconds 
+  Time since last request: 17.778727 seconds.
+  path: Assets/Objects/Animations/animation-test.fbx
+  artifactKey: Guid(a8c54bf27e1b3954dae2e9c5fefd4860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/animation-test.fbx using Guid(a8c54bf27e1b3954dae2e9c5fefd4860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae6d199bb2fc4a12098d2d702ccfc00') in 0.016838 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Objects/Materials/wood.mat
-  artifactKey: Guid(05abb231ac7463a47a77d1e60f1ae85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/wood.mat using Guid(05abb231ac7463a47a77d1e60f1ae85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c834c8ccfa4fe7da240ae0527e07fe6') in 0.013359 seconds 
+  Time since last request: 170.619756 seconds.
+  path: Assets/Objects/Animations/character.fbx
+  artifactKey: Guid(c66b9c57435b10345b813ed77d3ddd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/character.fbx using Guid(c66b9c57435b10345b813ed77d3ddd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad0b82d2af819dfcdd27181693da0a7') in 0.151319 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Objects/Materials/fluff.mat
-  artifactKey: Guid(e1432a0b925157d41832bcb7a02d83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/fluff.mat using Guid(e1432a0b925157d41832bcb7a02d83cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0ba27869cfce55911e98ece76c0b7b') in 0.013677 seconds 
+  Time since last request: 362.460684 seconds.
+  path: Assets/Objects/Animations/MainCharacter.controller
+  artifactKey: Guid(682ae3b79a213364bb35c9f842a57763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/MainCharacter.controller using Guid(682ae3b79a213364bb35c9f842a57763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438d1729aeb1a40ab771142b91765f7a') in 0.005675 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Objects/Materials/woodV2.mat
-  artifactKey: Guid(34c54005340d0444a84f44e18b314606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Materials/woodV2.mat using Guid(34c54005340d0444a84f44e18b314606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa940e649be5725b0b3c3fd42ab1797') in 0.022066 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 154.932146 seconds.
+  path: Assets/Objects/Animations/animation-test2.fbx
+  artifactKey: Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/animation-test2.fbx using Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51843c36403bb508ffd45071c331edf8') in 0.125469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.435393 seconds.
+  path: Assets/Objects/Animations/animation-test2.fbx
+  artifactKey: Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/animation-test2.fbx using Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d8ecb5416abe01be6ecfd68f1245d2') in 0.012037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.902491 seconds.
+  path: Assets/Objects/Animations/animation-test2.fbx
+  artifactKey: Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Animations/animation-test2.fbx using Guid(a32bd279de9be5049872610b6f9b5da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00454c39b3270e0837eebc5fe3c3e990') in 0.121483 seconds 

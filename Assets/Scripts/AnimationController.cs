@@ -18,20 +18,24 @@ public class AnimationController : MonoBehaviour
         {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
-                mAnimator.SetTrigger("TrWalk");
+                //mAnimator.SetTrigger("TrWalk");
+                mAnimator.SetBool("isMoving", true);
             }
             else
             {
-                mAnimator.SetTrigger("TrIdle");
+                //mAnimator.SetTrigger("TrIdle");
+                mAnimator.SetBool("isMoving", false);
             }
 
             if(OnlineMove.isGrabbing)
             {
-                mAnimator.SetTrigger("TrGrab");
+                //mAnimator.SetTrigger("TrGrab");
+                mAnimator.SetBool("isGrabbing", true);
             }
             else
             {
-                mAnimator.SetTrigger("TrLetGo");
+                //mAnimator.SetTrigger("TrLetGo");
+                mAnimator.SetBool("isGrabbing", false);
             }
         }
     }

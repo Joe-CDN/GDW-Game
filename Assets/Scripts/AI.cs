@@ -126,7 +126,39 @@ public class AI : MonoBehaviour
     }
     void ResetNPC(Collision collision)
     {
-        Destroy(collision.gameObject);
+        //Destroy(collision.gameObject);
+        if (collision.collider.tag.Equals("catFaePot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("faeSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("goldPot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("goldSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("happyPot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("hapSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("lovePot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("loveSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("purePot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("pureSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("sadPot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("sadSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("timePot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("timeSp").transform.position;
+        }
+        if (collision.collider.tag.Equals("truthPot"))
+        {
+            collision.gameObject.transform.position = GameObject.Find("truthSp").transform.position;
+        }
         PersistanceManager.instance.npcApproachPercent = 0;
         PersistanceManager.instance.npcApproach = false;
         pureBubble.gameObject.SetActive(false);
@@ -247,12 +279,13 @@ public class AI : MonoBehaviour
             truthBubble.gameObject.SetActive(false);
         }
 
-        Debug.Log(potionTotalRequested);
+        Debug.Log("potion requested" + potionTotalRequested);
     }
 
     void giveDNA()
     {
-        SpawnFromPool(bloodPrefab);
+        //SpawnFromPool(bloodPrefab);
+        bloodPrefab.transform.position = hand.transform.position;
     }
     public void SpawnFromPool(GameObject prefab){
         var spawn = dnaPool.Instance.GetFromPool(prefab);

@@ -23,7 +23,8 @@ public class roseSpawn : MonoBehaviour
         {
             if(PersistanceManager.instance.roses < 1)
             {
-                SpawnFromPool(Prefab);
+                //SpawnFromPool(Prefab);
+                GameObject.Find("Rose").transform.position = GameObject.Find("roseSpawn").transform.position;
                 PersistanceManager.instance.roses += 1;
                 Debug.Log(PersistanceManager.instance.roses);
             }            

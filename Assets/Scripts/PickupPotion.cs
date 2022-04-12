@@ -19,7 +19,7 @@ public class PickupPotion : MonoBehaviour
         {
             GetComponent<Rigidbody>().useGravity = false;
             GetComponent<Rigidbody>().isKinematic = true;
-            this.transform.parent = GameObject.Find("hand").transform;
+            //this.transform.parent = GameObject.Find("hand").transform;
             this.transform.position = GameObject.Find("hand").transform.position; // sets the position of the object to your hand position
             this.transform.rotation = GameObject.Find("hand").transform.rotation;
         }
@@ -27,7 +27,7 @@ public class PickupPotion : MonoBehaviour
         {
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<Rigidbody>().isKinematic = false;
-            this.transform.parent = null;
+            //this.transform.parent = null;
         }
     }
 

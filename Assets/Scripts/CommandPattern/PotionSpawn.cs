@@ -34,7 +34,7 @@ public class PotionSpawn : MonoBehaviour
             CommandInvoker.AddCopmmand(command);
             Cauldron.potionTotal = 0;
         }
-        if(Cauldron.potionTotal == 50.61f)
+        if(Cauldron.potionTotal == 41.51f)
         {
             ICommand command = new SpawnPotionCommand(this.transform.position, lovePotPrefab);
             CommandInvoker.AddCopmmand(command);

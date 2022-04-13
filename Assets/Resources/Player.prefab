@@ -83,6 +83,7 @@ MonoBehaviour:
   page: {fileID: 0}
   bookPrompt: {fileID: 0}
   bushPrompt: {fileID: 0}
+  brushPrompt: {fileID: 0}
   speed: 6
   gravity: -9.81
   camOffset: {x: 0, y: 8, z: -4}

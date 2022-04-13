@@ -19,6 +19,7 @@ public class OnlineMove : MonoBehaviour
     public RawImage page;
     public Text bookPrompt;
     public Text bushPrompt;
+    public Text brushPrompt;
     
     //public bool is3rdPerson = true;
     public static bool isGrabbing;
@@ -90,6 +91,14 @@ public class OnlineMove : MonoBehaviour
             {
                 bushPrompt.gameObject.SetActive(false);
             }
+            if(Vector3.Distance(this.transform.position, GameObject.Find("brush").transform.position) <= 2f)
+            {
+                brushPrompt.gameObject.SetActive(true);
+            }
+            else
+            {
+                brushPrompt.gameObject.SetActive(false);
+            }
         }
     }
     public void playerPickUp()
@@ -152,6 +161,8 @@ public class OnlineMove : MonoBehaviour
                 bookPrompt = txt;
             if (txt.name == "BushPrompt")
                 bushPrompt = txt;
+            if (txt.name == "BrushPrompt")
+                brushPrompt = txt;
         }
         CinemachineVirtualCamera brain = cameraParent.GetComponentInChildren<CinemachineVirtualCamera>();
         brain.LookAt = this.transform;

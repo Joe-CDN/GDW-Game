@@ -79,48 +79,56 @@ public class AI : MonoBehaviour
             if(potionTotalRequested == 27.77f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 20;
+                GameSceneManager.NPCMaxTime -= 2f;
             }            
         }
         if (collision.collider.tag.Equals("goldPot")){
             if(potionTotalRequested == 23.26f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 20;
+                GameSceneManager.NPCMaxTime -= 2f;
             } 
         }
         if (collision.collider.tag.Equals("sadPot")){
             if(potionTotalRequested == 29.18f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 20;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
         if (collision.collider.tag.Equals("lovePot")){
             if(potionTotalRequested == 50.61f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 40;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
         if (collision.collider.tag.Equals("catFaePot")){
             if(potionTotalRequested == 30.21f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 30;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
         if (collision.collider.tag.Equals("timePot")){
             if(potionTotalRequested == 26.19f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 20;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
         if (collision.collider.tag.Equals("truthPot")){
             if(potionTotalRequested == 14.88f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 10;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
         if (collision.collider.tag.Equals("happyPot")){
             if(potionTotalRequested == 23.42f){
                 ResetNPC(collision);
                 PersistanceManager.instance.score += 20;
+                GameSceneManager.NPCMaxTime -= 2f;
             }
         }
     }
@@ -279,7 +287,7 @@ public class AI : MonoBehaviour
             truthBubble.gameObject.SetActive(false);
         }
 
-        Debug.Log("potion requested" + potionTotalRequested);
+        //Debug.Log("potion requested" + potionTotalRequested);
     }
 
     void giveDNA()

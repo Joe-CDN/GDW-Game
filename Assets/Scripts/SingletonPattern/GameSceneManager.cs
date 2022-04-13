@@ -9,7 +9,7 @@ public class GameSceneManager : MonoBehaviour
     public float dayDelay = 10f;
     public float lastDayTime;
     private int dayTime;
-    public float NPCMaxTime = 60;
+    public static float NPCMaxTime = 90;
 
     public Text scoreLabel;
     public Text clock;
@@ -19,6 +19,7 @@ public class GameSceneManager : MonoBehaviour
     private void Awake()
     {
         dayTime = 6;
+        NPCMaxTime = 90;
         PersistanceManager.instance.countDown = NPCMaxTime;
         PersistanceManager.instance.playing = true;
     }

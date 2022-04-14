@@ -46755,7 +46755,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayDelay: 30
   lastDayTime: 0
-  NPCMaxTime: 60
   scoreLabel: {fileID: 1830859853}
   clock: {fileID: 2110421591}
   npcTimer: {fileID: 1497611028}
@@ -47126,6 +47125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450652715255288}
   - component: {fileID: 984703511}
+  - component: {fileID: 919132149066260291}
   - component: {fileID: 984703510}
   m_Layer: 0
   m_Name: npc
@@ -47134,3 +47134,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &919132149066260291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149066260290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 2.4, z: 2.22}

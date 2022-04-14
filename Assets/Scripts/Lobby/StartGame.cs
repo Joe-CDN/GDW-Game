@@ -13,7 +13,7 @@ public class StartGame : MonoBehaviour
     }
     public void LoadGame()
     {
-        SceneManager.LoadScene("Load");
+        SceneManager.LoadScene("Cutscene");
         //GetComponent<AudioSource> ().Stop();
     }
 
